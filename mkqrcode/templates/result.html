@@ -1,0 +1,16 @@
+{%extends 'base.html'%}
+{%block content%}
+<button class="btn btn-success" type="button" onclick="location.href='logoutclient'">LOGOUT
+
+</button>
+<h1>
+    <a href={{document.pdfdata.url}}>DOWNLOAD PDF
+</a>
+</h1>
+<h1>
+    <a href={{document.qrdata.url}}>DOWNLOAD QR CODE
+
+    </a>
+</h1>
+<img src="{{document.qrdata.url}}">
+{%endblock%}

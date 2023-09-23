@@ -1,0 +1,42 @@
+{%extends 'base.html'%}
+{%block content%}
+<style>
+    img{
+        width: 30%;
+        height:30%;
+        display:block;
+        margin-left:auto;
+        margin-right: auto;
+        margin-top: 200px;
+        
+    }
+    h1{
+        text-align: center;
+        
+    }
+    .headtxt{
+        color:red;
+        
+    }
+    
+    button{
+        width:400px;
+        height: 60px;
+        margin-left: 620px;
+        margin-right: auto;
+        margin-top: 100px;
+        border-radius: 5%;
+        
+    }
+
+</style>
+<button class="btn btn-success" type="button" onclick="location.href='logoutclient'">LOGOUT
+
+</button>
+<div class="headtxt">
+<h1 style="color:red; font-size: 50px;;">welcome {{client_obj.clientname}}</h1></div>
+<img src="{{client_obj.photo.url}}">
+
+    <button onclick="location.href='clientdataentry';">Client Data Entry</button>
+  
+{%endblock%}
